@@ -1,0 +1,6 @@
+title: Dearbrant 的 Jekyll 试验站
+description: 使用 GitHub Pages 体验 Jekyll 与 Minima 主题。
+url: "https://dearbrant.com"
+baseurl: "/jekyll-demo"
+theme: minima
+lang: zh-CN
