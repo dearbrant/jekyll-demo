@@ -8,13 +8,21 @@ bodyClass: "page-home"
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
+        <div class="app-downloads">
+          <a href="https://apps.apple.com/app/id6797682018">
+            <img class="app-store-badge" src="{{ '/images/badges/app-store-zh-cn.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="131" height="48" />
+          </a>
+          <div class="android-download">
+            <button type="button" disabled>
+              <img src="{{ '/images/badges/google-play-zh-cn.png' | relative_url }}" alt="Android App 暂未开放下载" width="165" height="64" />
+            </button>
+            <span>Android 版即将推出</span>
+          </div>
+        </div>
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
       </div>
       {% endif %}
     </div>

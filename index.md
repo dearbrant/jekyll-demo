@@ -1,13 +1,12 @@
 ---
-title: Jekyll Serif Theme
+title: 纽扣缝纫
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
-show_call_box: true
+description: 全能 AI 缝纫工具，投影仪裁切、拼接、打印、管理存储纸样，一个App全搞定。
+intro_image: "images/illustrations/head.svg"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
 ---
 
-# Serif - A Jekyll Business Theme.
+# 纽扣缝纫
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+全能 AI 缝纫工具，投影仪裁切、拼接、打印、管理存储纸样，一个App全搞定。
