@@ -49,6 +49,10 @@
 .page-home {
   .intro-image {
     margin-top: 0;
+    @include media-breakpoint-up(md) {
+      position: relative;
+      bottom: auto;
+    }
   }
   .app-downloads {
     display: flex;
