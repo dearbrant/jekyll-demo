@@ -48,8 +48,10 @@
 
 .page-home {
   .intro {
+    padding-bottom: 30px;
     @include media-breakpoint-up(md) {
       padding-top: 0;
+      padding-bottom: 70px;
     }
   }
   .intro h1 {
