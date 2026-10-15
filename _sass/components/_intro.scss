@@ -47,6 +47,11 @@
 }
 
 .page-home {
+  .intro {
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+  }
   .intro h1 {
     font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
     font-weight: 700;
