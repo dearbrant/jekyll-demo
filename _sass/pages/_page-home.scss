@@ -2,13 +2,11 @@
   .service-content {
     position: relative;
     isolation: isolate;
-  }
-  .service-description {
-    position: relative;
+    padding-top: 40px;
   }
   .service-icon {
     position: absolute;
-    top: -40px;
+    top: 0;
     right: 0;
     width: 120px;
     height: 120px;

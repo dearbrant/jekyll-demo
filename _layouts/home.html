@@ -37,13 +37,11 @@ bodyClass: "page-home"
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
+            <img class="service-icon" src="{{ service.icon | relative_url }}" alt="" aria-hidden="true" width="120" height="120" />
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
-            <p class="service-description">
-              <img class="service-icon" src="{{ service.icon | relative_url }}" alt="" aria-hidden="true" width="120" height="120" />
-              {{ service.summary | escape }}
-            </p>
+            <p>{{ service.summary | escape }}</p>
           </div>
         </div>
       </div>
