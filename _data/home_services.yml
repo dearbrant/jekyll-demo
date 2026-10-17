@@ -1,0 +1,23 @@
+- title: "投影仪裁切"
+  summary: "数字精确校准，将纸样以实际尺寸投影到面料上，直接裁切，大幅简化裁料流程。"
+  url: /services/accounting/
+
+- title: "纸样打印"
+  summary: "PLT、DXF 无需转换格式，可手机直接打印。支持大尺寸纸样分片打印，自动裁切 A4、A3家用纸张打印。"
+  url: /services/business-advisory/
+
+- title: "纸样拼接"
+  summary: "支持 A4、A3 PDF纸样拼接成整张大尺寸纸样，拼接后可投影仪裁切。"
+  url: /services/business-sales/
+
+- title: "纸样存储"
+  summary: "保存 PLT、DXF、PDF、SVG、PNG、JPG 纸样。按款式、格式进行分类管理，清晰有序，易于查找。"
+  url: /services/mergers/
+
+- title: "尺寸标定"
+  summary: "为 PNG、JPG、WebP 图片格式纸样标定实际尺寸。从而以正确尺寸打印或投影。"
+  url: /services/superannuation/
+
+- title: "缝纫社区"
+  summary: "加入缝纫社区，和同好分享交流，帮助你找到喜欢的设计师、纸样、教程和面辅料。"
+  url: /services/tax-preperation/

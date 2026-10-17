@@ -33,14 +33,14 @@ bodyClass: "page-home"
   <div class="container pt-3 pb-6 pb-md-10">
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: limit %}
+      {% for service in site.data.home_services limit: limit %}
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ service.summary | escape }}</p>
           </div>
         </div>
       </div>
