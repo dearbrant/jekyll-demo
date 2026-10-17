@@ -37,7 +37,7 @@ bodyClass: "page-home"
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
-            <img class="service-icon" src="{{ service.icon | relative_url }}" alt="" aria-hidden="true" width="120" height="120" />
+            <img class="service-icon" src="{{ service.icon | relative_url }}?v={{ site.time | date: '%s' }}" alt="" aria-hidden="true" width="120" height="120" />
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
@@ -46,11 +46,6 @@ bodyClass: "page-home"
         </div>
       </div>
       {% endfor %}
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
-      </div>
     </div>
   </div>
 </div>

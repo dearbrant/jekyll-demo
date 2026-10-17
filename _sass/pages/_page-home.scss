@@ -18,5 +18,9 @@
     font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
     font-weight: 700;
     color: #D52207;
+    &:hover {
+      color: #D52207;
+      text-decoration: none;
+    }
   }
 }
