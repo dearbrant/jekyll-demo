@@ -3,11 +3,11 @@
   url: /services/accounting/
 
 - title: "纸样打印"
-  summary: "PLT、DXF 无需转换格式，可手机直接打印。支持大尺寸纸样分片打印，自动裁切 A4、A3家用纸张打印。"
+  summary: "PLT、DXF 无需转换格式，可手机直接打印。支持大尺寸纸样分片打印，自动裁切 A4、A3 家用纸张打印。"
   url: /services/business-advisory/
 
 - title: "纸样拼接"
-  summary: "支持 A4、A3 PDF纸样拼接成整张大尺寸纸样，拼接后可投影仪裁切。"
+  summary: "支持 A4、A3 PDF 纸样拼接成整张大尺寸纸样，拼接后可投影仪裁切。"
   url: /services/business-sales/
 
 - title: "纸样存储"
