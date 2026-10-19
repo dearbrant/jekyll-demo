@@ -28,53 +28,6 @@
     }
   }
 
-  .header {
-    height: 64px;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    .site-brand {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      font-family: inherit;
-      font-size: 14px;
-      line-height: 24px;
-      color: #000000;
-    }
-    .brand-english, .language-link .menu-label {
-      font-family: "Coutto Inter", "PingFang SC", sans-serif;
-    }
-    .brand-icon {
-      display: flex;
-      width: 24px;
-      height: 24px;
-      align-items: center;
-      justify-content: center;
-      img {
-        border-radius: 5px;
-      }
-    }
-    .main-menu > ul {
-      gap: 24px;
-      > li > a {
-        padding: 0;
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 24px;
-        color: #000000;
-      }
-    }
-    .language-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      svg {
-        width: 14px;
-        height: 14px;
-      }
-    }
-  }
 
   .landing-hero {
     .container {
@@ -201,21 +154,6 @@
     }
   }
 
-  .footer {
-    padding: 0;
-    background: transparent;
-    .footer-inner {
-      min-height: 64px;
-      gap: 40px;
-    }
-    .footer-title, .footer-tagline {
-      font-family: inherit;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 24px;
-      color: rgba(213, 34, 7, 0.7);
-    }
-  }
 
   @include media-breakpoint-down(lg) {
     .landing-hero {
@@ -234,9 +172,7 @@
         width: 50%;
       }
     }
-    .footer .footer-inner {
-      gap: 16px;
-    }
+
   }
 
   @include media-breakpoint-down(md) {
@@ -274,6 +210,92 @@
     .home-faq {
       padding: 40px 0 56px;
     }
+  }
+}
+
+.page-home,
+.page-blog,
+.page-post {
+  .header,
+  .footer {
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    @include media-breakpoint-up(lg) {
+      .container {
+        max-width: 960px;
+      }
+    }
+  }
+  .header {
+    height: 64px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    .site-brand {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000000;
+    }
+    .brand-english, .language-link .menu-label {
+      font-family: "Coutto Inter", "PingFang SC", sans-serif;
+    }
+    .brand-icon {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      img {
+        border-radius: 5px;
+      }
+    }
+    .main-menu > ul {
+      gap: 24px;
+      > li > a {
+        padding: 0;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+    .language-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 0;
+    background: transparent;
+    .footer-inner {
+      min-height: 64px;
+      gap: 40px;
+    }
+    .footer-title, .footer-tagline {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(213, 34, 7, 0.7);
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .footer .footer-inner {
+      gap: 16px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     .footer .footer-inner {
       flex-direction: column;
       align-items: flex-start;
