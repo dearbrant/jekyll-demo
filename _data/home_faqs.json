@@ -1,19 +1,5 @@
 [
   {
-    "question": "支持什么设备？",
-    "answers": [
-      "纽扣纸样支持 iPhone、iPad，以及 Android 手机与平板电脑。",
-      "进行投影仪校准与面料裁切时，建议使用屏幕更大的 iPad 或 Android 平板，操作更清晰、视野更好。"
-    ]
-  },
-  {
-    "question": "支持什么系统版本？",
-    "answers": [
-      "iOS 设备需 iOS 17 或更高版本；Android 设备需 Android 8.0 (API 26) 或更高版本。",
-      "请保持系统与 App 为较新版本，以获得最佳体验与兼容性。"
-    ]
-  },
-  {
     "question": "裁切推荐什么投影仪？",
     "answers": [
       "建议选用至少 720p 分辨率、支持将手机画面镜像到投影仪的机型 (可使用投影仪自带投屏/镜像软件，或系统无线投屏)。",
@@ -44,6 +30,20 @@
     "answers": [
       "支持 PDF、SVG、DXF、PLT、PNG、JPEG、WebP 等常见纸样文件的 A3/A4 分片打印。",
       "图片格式 PNG、JPEG、WebP 纸样在通过标定功能设置实际尺寸后再打印。"
+    ]
+  },
+  {
+    "question": "App 支持什么设备？",
+    "answers": [
+      "纽扣纸样支持 iPhone、iPad，以及 Android 手机与平板电脑。",
+      "进行投影仪校准与面料裁切时，建议使用屏幕更大的 iPad 或 Android 平板，操作更清晰、视野更好。"
+    ]
+  },
+  {
+    "question": "App 支持什么系统版本？",
+    "answers": [
+      "iOS 设备需 iOS 17 或更高版本；Android 设备需 Android 8.0 (API 26) 或更高版本。",
+      "请保持系统与 App 为较新版本，以获得最佳体验与兼容性。"
     ]
   }
 ]

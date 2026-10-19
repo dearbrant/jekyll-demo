@@ -3,66 +3,59 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<section class="landing-hero">
   <div class="container">
-    <div class="row justify-content-start align-items-md-center">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        <div class="app-downloads">
-          <a href="https://apps.apple.com/app/id6797682018">
-            <img class="app-store-badge" src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="148" height="48" />
-          </a>
-          <div class="android-download">
-            <button type="button" disabled>
-              <img src="{{ '/images/badges/google-play.svg' | relative_url }}" alt="Android App 暂未开放下载" width="163" height="48" />
-            </button>
-          </div>
-        </div>
+    <div class="hero-copy">
+      {{ content }}
+      <div class="app-downloads">
+        <a href="https://apps.apple.com/app/id6797682018">
+          <img src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="148" height="48" />
+        </a>
+        <button type="button" disabled aria-label="Android App 暂未开放下载">
+          <img src="{{ '/images/badges/google-play.svg' | relative_url }}" alt="Get it on Google Play" width="163" height="48" />
+        </button>
       </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
-      </div>
-      {% endif %}
     </div>
+    <img class="hero-illustration" src="{{ '/images/illustrations/coutto-sewing.svg' | relative_url }}" alt="缝纫手作插画" width="560" height="432" />
   </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-3 pb-6">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.data.home_services limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <img class="service-icon" src="{{ service.icon | relative_url }}?v={{ site.time | date: '%s' }}" alt="" aria-hidden="true" width="120" height="120" />
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.summary | escape }}</p>
-          </div>
-        </div>
+<section class="landing-screenshots" aria-label="App 功能截图">
+  <div class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
+    {% for screenshot in site.data.home_screenshots %}
+    <img src="{{ '/images/screenshots/' | append: screenshot.file | relative_url }}" alt="{{ screenshot.alt | escape }}" width="160" height="348" />
+    {% endfor %}
+  </div>
+</section>
+
+<section class="landing-features" aria-label="App 功能介绍">
+  <div class="container">
+    <div class="feature-grid">
+      {% for service in site.data.home_services %}
+      <div class="feature-card">
+        <img class="feature-icon" src="{{ service.icon | relative_url }}" alt="" aria-hidden="true" width="120" height="120" />
+        <h2 class="feature-title">{{ service.title | escape }}</h2>
+        <p class="feature-summary">{{ service.summary | escape }}</p>
       </div>
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<section class="strip strip-grey home-faq" aria-labelledby="faq-title">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+<section class="home-faq" aria-labelledby="faq-title">
+  <div class="container">
     <h2 id="faq-title" class="faq-title">常见问题</h2>
     <div class="faq-list">
-    {% for faq in site.data.home_faqs %}
-    <details class="faq-item" name="home-faq">
-      <summary><span>{{ faq.question | escape }}</span></summary>
-      <ul class="faq-answer">
-        {% for sentence in faq.answers %}
-        <li>{{ sentence | escape }}</li>
-        {% endfor %}
-      </ul>
-    </details>
-    {% endfor %}
+      {% for faq in site.data.home_faqs %}
+      <details class="faq-item" name="home-faq"{% if forloop.first %} open{% endif %}>
+        <summary><span>{{ faq.question | escape }}</span></summary>
+        <ul class="faq-answer">
+          {% for sentence in faq.answers %}
+          <li>{{ sentence | escape }}</li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endfor %}
     </div>
   </div>
 </section>

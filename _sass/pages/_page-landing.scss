@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "Coutto Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/coutto-inter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coutto Serif";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/coutto-serif-black.ttf") format("truetype");
+}
+
+.page-home {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../../images/backgrounds/pic_background_up.png"), url("../../images/backgrounds/pic_background_down.png");
+  background-position: center top, center bottom;
+  background-repeat: repeat-x;
+
+  @include media-breakpoint-up(lg) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  .header {
+    height: 64px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    .site-brand {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000000;
+    }
+    .brand-english, .language-link .menu-label {
+      font-family: "Coutto Inter", "PingFang SC", sans-serif;
+    }
+    .brand-icon {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      img {
+        border-radius: 5px;
+      }
+    }
+    .main-menu > ul {
+      gap: 24px;
+      > li > a {
+        padding: 0;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+    .language-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  .landing-hero {
+    .container {
+      position: relative;
+      min-height: 552px;
+    }
+    .hero-copy {
+      width: 370px;
+      padding-top: 140px;
+    }
+    h1 {
+      margin: 0 0 24px;
+      font-family: "Coutto Serif", "Noto Serif SC", serif;
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 64px;
+      color: #D52106;
+    }
+    p {
+      margin: 0 0 24px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #000000;
+    }
+    .hero-illustration {
+      position: absolute;
+      top: 40px;
+      left: 415px;
+      width: 560px;
+      height: auto;
+    }
+    .app-downloads {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 0;
+      align-items: center;
+      a, img {
+        display: block;
+      }
+      button {
+        display: block;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .landing-screenshots {
+    padding: 0 16px;
+    .screenshots-track {
+      display: flex;
+      gap: 8px;
+      max-width: 1168px;
+      margin: 0 auto;
+      overflow-x: auto;
+      img {
+        flex: 0 0 160px;
+        width: 160px;
+        height: 348px;
+        object-fit: cover;
+        border: 0.5px solid rgba(234, 67, 53, 0.2);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .landing-features {
+    padding: 80px 0 20px;
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 50px 30px;
+    }
+    .feature-card {
+      position: relative;
+      isolation: isolate;
+      padding-top: 30px;
+    }
+    .feature-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 120px;
+      height: 120px;
+      z-index: -1;
+    }
+    .feature-title {
+      margin: 0 0 10px;
+      font-family: "Coutto Serif", "Noto Serif SC", serif;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 40px;
+      color: #D52207;
+    }
+    .feature-summary {
+      margin: 0;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .home-faq {
+    padding: 60px 0 80px;
+    .faq-title {
+      max-width: none;
+      margin: 0 0 24px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+    .faq-list {
+      max-width: none;
+    }
+    .faq-item + .faq-item {
+      margin-top: 4px;
+    }
+  }
+
+  .footer {
+    padding: 0;
+    background: transparent;
+    .footer-inner {
+      min-height: 64px;
+      gap: 40px;
+    }
+    .footer-title, .footer-tagline {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(213, 34, 7, 0.7);
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .landing-hero {
+      .hero-copy {
+        width: 45%;
+        padding-top: 110px;
+      }
+      h1 {
+        font-size: 48px;
+        line-height: 60px;
+      }
+      .hero-illustration {
+        left: auto;
+        right: 15px;
+        top: 64px;
+        width: 50%;
+      }
+    }
+    .footer .footer-inner {
+      gap: 16px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .landing-hero {
+      .container {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 36px;
+        padding-bottom: 48px;
+      }
+      .hero-copy {
+        width: 100%;
+        padding: 0;
+      }
+      h1 {
+        font-size: 42px;
+        line-height: 56px;
+      }
+      .hero-illustration {
+        position: static;
+        width: 100%;
+        max-width: 560px;
+        align-self: center;
+      }
+    }
+    .landing-features {
+      padding-top: 56px;
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+    .home-faq {
+      padding: 40px 0 56px;
+    }
+    .footer .footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 16px 0;
+      .footer-title {
+        margin: 0;
+        flex-shrink: 1;
+      }
+    }
+  }
+}

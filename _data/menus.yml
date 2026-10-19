@@ -4,7 +4,7 @@ main:
     url: "https://coutto.app/zh/changelog/"
     url_en: "https://coutto.app/en/changelog/"
     weight: 1
-  - name: "博客"
+  - name: "使用教程"
     name_en: "Blog"
     url: "/blog/"
     url_en: "/en/blog/"

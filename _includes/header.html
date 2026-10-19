@@ -1,6 +1,6 @@
 <div class='header'>
   <div class="container">
-    <a class="site-brand" href="{{ site.baseurl }}">{{ site.title | escape }}</a>
+    <a class="site-brand" href="{{ site.baseurl }}">{% if page.layout == 'home' %}<span class="brand-icon"><img src="{{ '/images/brand/app-icon.png' | relative_url }}" alt="" width="18" height="18" /></span><span>纽扣缝纫</span><span class="brand-english">Coutto Sew</span>{% else %}{{ site.title | escape }}{% endif %}</a>
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>
