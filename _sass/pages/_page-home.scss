@@ -23,4 +23,29 @@
       text-decoration: none;
     }
   }
+  .home-faq {
+    .faq-title {
+      font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #D52207;
+      margin-bottom: 30px;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba($black, 0.15);
+      summary {
+        padding: 20px 0;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: $black;
+        cursor: pointer;
+      }
+    }
+    .faq-answer {
+      padding-bottom: 20px;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

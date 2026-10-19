@@ -49,24 +49,18 @@ bodyClass: "page-home"
   </div>
 </div>
 
-{% if site.data.features %}
-<div class="strip strip-grey">
+<section class="strip strip-grey home-faq" aria-labelledby="faq-title">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
-        </div>
+    <h2 id="faq-title" class="faq-title">常见问题</h2>
+    {% for faq in site.data.home_faqs %}
+    <details class="faq-item">
+      <summary>{{ faq.question | escape }}</summary>
+      <div class="faq-answer">
+        {% for paragraph in faq.answers %}
+        <p>{{ paragraph | escape }}</p>
+        {% endfor %}
       </div>
-      {% endfor %}
-
-    </div>
+    </details>
+    {% endfor %}
   </div>
-</div>
-{% endif %}
+</section>
