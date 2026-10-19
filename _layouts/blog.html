@@ -1,0 +1,20 @@
+---
+layout: default
+bodyClass: "page-blog"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <h1 class="title">{{ page.title | escape }}</h1>
+  <div class="blog-list">
+    {% assign posts = site.posts | where: 'lang', page.lang | sort: 'order' %}
+    {% for post in posts %}
+    <article class="blog-item">
+      <div class="blog-text">
+        <h2 class="service-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p class="blog-summary">{{ post.description | escape }}</p>
+      </div>
+      <img class="blog-thumbnail" src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" width="160" height="120" loading="lazy" />
+    </article>
+    {% endfor %}
+  </div>
+</div>

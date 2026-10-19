@@ -1,0 +1,15 @@
+{% assign mainmenu = site.data.menus.main | sort: 'weight' %}
+{% for item in mainmenu %}
+  {% assign item_url = item.url %}
+  {% assign item_name = item.name %}
+  {% if page.lang == 'en' and page.translation_url %}
+    {% assign item_url = item.url_en | default: item.url %}
+    {% assign item_name = item.name_en | default: item.name %}
+  {% endif %}
+  {% if item.name == 'English' and page.translation_url %}
+    {% assign item_url = page.translation_url %}
+  {% endif %}
+  <li class="{% if item_url == page.url %}active{% endif %}">
+    <a href="{{ item_url | relative_url }}">{{ item_name }}</a>
+  </li>
+{% endfor %}

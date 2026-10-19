@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 
 <head>
   <meta name="robots" content="noindex">
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% if page.translation_url %}<link rel="alternate" hreflang="{{ page.translation_lang }}" href="{{ page.translation_url | absolute_url }}" />{% endif %}
   <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

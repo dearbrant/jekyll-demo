@@ -1,0 +1,40 @@
+.page-blog {
+  .blog-list {
+    max-width: 960px;
+    margin-top: 30px;
+  }
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    & + .blog-item {
+      margin-top: 40px;
+      border-top: 0.5px solid rgba(#D52207, 0.1);
+      padding-top: 40px;
+    }
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+  .blog-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .blog-summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 1.6;
+    min-height: 4.8em;
+    margin: 0;
+  }
+  .blog-thumbnail {
+    display: block;
+    flex: none;
+    width: 160px;
+    height: 120px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+}
