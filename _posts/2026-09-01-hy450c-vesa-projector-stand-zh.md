@@ -6,7 +6,7 @@ lang: "zh-CN"
 permalink: "/zh/2026/09/hy450c-vesa-projector-stand/"
 translation_url: "/en/2026/09/hy450c-vesa-projector-stand/"
 translation_lang: "en"
-image: "/images/blog/hy450c-vesa-projector-stand/img-003.png"
+image: "/images/blog/hy450c-vesa-projector-stand/img-014.png"
 description: "使用 3D 打印 VESA 转接器、落地电视支架和常见配件，搭建免打孔的 HY450C 缝纫投影支架。本文介绍投影仪背面非标准孔距的转接方法、L99C 支架的高度与安装条件，以及夹式托盘、电源插线板和束线带的搭配方式，最后说明如何获取转接器的开源打印文件，方便你根据自己的设备准备安装清单。"
 order: 4
 ---

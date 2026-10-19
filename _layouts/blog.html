@@ -3,7 +3,7 @@ layout: default
 bodyClass: "page-blog"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pb-6 pt-4 pb-md-10">
   <h1 class="title">{{ page.title | escape }}</h1>
   <div class="blog-list">
     {% assign posts = site.posts | where: 'lang', page.lang | sort: 'order' %}
