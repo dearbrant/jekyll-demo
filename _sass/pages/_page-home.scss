@@ -29,20 +29,58 @@
       font-size: 2rem;
       font-weight: 700;
       color: #D52207;
-      margin-bottom: 30px;
+      max-width: 960px;
+      margin: 0 auto 30px;
+    }
+    .faq-list {
+      max-width: 960px;
+      margin: 0 auto;
     }
     .faq-item {
-      border-bottom: 1px solid rgba($black, 0.15);
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 73px;
+      padding: 20px 24px;
+      background: #ffffff;
+      border: 0.5px solid rgba(234, 67, 53, 0.2);
+      border-radius: 2px;
+      & + .faq-item {
+        margin-top: 10px;
+      }
       summary {
-        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 32px;
         font-size: 1.125rem;
+        line-height: 32px;
         font-weight: 700;
         color: $black;
         cursor: pointer;
+        list-style: none;
+        &::-webkit-details-marker {
+          display: none;
+        }
+        &::after {
+          content: "";
+          flex: 0 0 32px;
+          height: 32px;
+          background: url("../../images/faq/ic_plus.svg") center / contain no-repeat;
+        }
+      }
+      &[open] {
+        min-height: 193px;
+        summary::after {
+          background-image: url("../../images/faq/ic_minus.svg");
+        }
       }
     }
     .faq-answer {
-      padding-bottom: 20px;
+      margin-top: 10px;
+      p {
+        margin-bottom: 10px;
+      }
       p:last-child {
         margin-bottom: 0;
       }
