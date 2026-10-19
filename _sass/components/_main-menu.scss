@@ -13,6 +13,7 @@
       > a {
         padding: 10px 12px 10px 12px;
         display: inline-block;
+        font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
         font-weight: normal;
         text-decoration: none;
         color: #2f2f41;
@@ -22,7 +23,7 @@
       }
       &.active {
         > a {
-          font-weight: bold;
+          font-weight: normal;
           text-decoration: none;
           &:hover {
             text-decoration: none;

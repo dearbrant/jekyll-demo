@@ -11,21 +11,32 @@
       justify-content: space-between;
       flex-direction: row;
       align-items: center;
+      gap: 20px;
     }
   }
   .footer-title {
     color: #ffffff;
-    font-size: 1.3rem;
-    font-family: $font-family-heading;
-    font-weight: bold;
+    font-size: 1rem;
+    font-family: $font-family-base;
+    font-weight: normal;
+    flex-shrink: 0;
     margin-bottom: 10px;
     @include media-breakpoint-up(sm) {
       margin: 0;
     }
   }
   .footer-tagline {
-    color: $footer-text-color;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: normal;
     margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    a {
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
   }
   ul {
     list-style: none;
