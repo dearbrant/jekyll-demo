@@ -17,10 +17,6 @@
 .page-home {
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   color: #000000;
-  background-color: #ffffff;
-  background-image: url("../../images/backgrounds/pic_background_up.svg"), url("../../images/backgrounds/pic_background_down.png");
-  background-position: left top, center bottom;
-  background-repeat: repeat-x;
 
   @include media-breakpoint-up(lg) {
     .container {
@@ -216,6 +212,11 @@
 .page-home,
 .page-blog,
 .page-post {
+  background-color: #ffffff;
+  background-image: url("../../images/backgrounds/pic_background_up.svg"), url("../../images/backgrounds/pic_background_down.png");
+  background-position: left top, center bottom;
+  background-repeat: repeat-x;
+
   .header,
   .footer {
     font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
