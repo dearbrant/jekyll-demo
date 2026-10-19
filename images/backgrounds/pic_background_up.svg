@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="1024" viewBox="0 0 32 1024">
+  <defs>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0h2v2H0zM4 4h2v2H4z" fill="#ECECEC" shape-rendering="crispEdges"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.25" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#bdbdbd"/>
+      <stop offset="0.75" stop-color="#424242"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="fade-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="1024">
+      <path d="M0 0h32v1024H0z" fill="url(#fade)"/>
+    </mask>
+  </defs>
+  <path d="M0 0h32v1024H0z" fill="url(#dots)" mask="url(#fade-mask)"/>
+</svg>
