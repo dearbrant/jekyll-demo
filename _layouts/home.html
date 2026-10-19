@@ -54,7 +54,7 @@ bodyClass: "page-home"
     <h2 id="faq-title" class="faq-title">常见问题</h2>
     <div class="faq-list">
     {% for faq in site.data.home_faqs %}
-    <details class="faq-item">
+    <details class="faq-item" name="home-faq">
       <summary><span>{{ faq.question | escape }}</span></summary>
       <ul class="faq-answer">
         {% for sentence in faq.answers %}
