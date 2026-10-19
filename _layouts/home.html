@@ -55,7 +55,7 @@ bodyClass: "page-home"
     <div class="faq-list">
     {% for faq in site.data.home_faqs %}
     <details class="faq-item">
-      <summary>{{ faq.question | escape }}</summary>
+      <summary><span>{{ faq.question | escape }}</span></summary>
       <div class="faq-answer">
         {% for paragraph in faq.answers %}
         <p>{{ paragraph | escape }}</p>
