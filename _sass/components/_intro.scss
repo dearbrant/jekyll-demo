@@ -55,8 +55,8 @@
     }
   }
   .intro h1 {
-    font-family: "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
-    font-weight: 700;
+    font-family: "Noto Serif SC", serif;
+    font-weight: 900;
     color: #D52207;
   }
   .intro-image {
@@ -96,11 +96,6 @@
         display: block;
         width: auto;
         height: 48px;
-      }
-      span {
-        color: $steel;
-        font-size: 12px;
-        line-height: 1.5;
       }
     }
   }
