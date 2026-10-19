@@ -7,3 +7,23 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
+
+
+var screenshotDialog = document.querySelector('.screenshot-dialog');
+if (screenshotDialog) {
+    document.querySelectorAll('.screenshot-preview').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var thumbnail = button.querySelector('img');
+            var preview = screenshotDialog.querySelector('img');
+            preview.src = thumbnail.src;
+            preview.alt = thumbnail.alt;
+            screenshotDialog.showModal();
+        });
+    });
+    screenshotDialog.querySelector('.screenshot-close').addEventListener('click', function() {
+        screenshotDialog.close();
+    });
+    screenshotDialog.addEventListener('click', function(event) {
+        if (event.target === screenshotDialog) screenshotDialog.close();
+    });
+}

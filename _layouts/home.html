@@ -23,10 +23,17 @@ bodyClass: "page-home"
 <section class="landing-screenshots" aria-label="App 功能截图">
   <div class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
     {% for screenshot in site.data.home_screenshots %}
+    <button class="screenshot-preview" type="button" aria-label="放大查看：{{ screenshot.alt | escape }}">
     <img src="{{ '/images/screenshots/' | append: screenshot.file | relative_url }}" alt="{{ screenshot.alt | escape }}" width="160" height="348" />
+    </button>
     {% endfor %}
   </div>
 </section>
+
+<dialog class="screenshot-dialog" aria-label="App 截图大图预览">
+  <button class="screenshot-close" type="button" aria-label="关闭预览" autofocus><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></button>
+  <img alt="" />
+</dialog>
 
 <section class="landing-features" aria-label="App 功能介绍">
   <div class="container">
