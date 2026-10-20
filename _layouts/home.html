@@ -8,10 +8,16 @@ bodyClass: "page-home"
     <div class="hero-copy">
       {{ content }}
       <div class="app-downloads">
-        <a href="https://apps.apple.com/app/id6797682018">
-          <img src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="148" height="48" />
-        </a>
-        <button type="button" aria-disabled="true" title="即将上线" aria-label="腾讯应用宝，即将上线">
+        <div class="ios-download">
+          <a href="https://apps.apple.com/app/id6797682018" aria-describedby="ios-qr-caption">
+            <img src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="148" height="48" />
+          </a>
+          <div class="ios-qr-popup">
+            <img src="{{ '/images/badges/ios-qr-code.png' | relative_url }}" alt="扫码下载纽扣缝纫 iOS App" width="180" height="180" />
+            <span id="ios-qr-caption">扫码下载 iOS 版</span>
+          </div>
+        </div>
+        <button type="button" aria-disabled="true" title="安卓版即将上线" aria-label="腾讯应用宝，安卓版即将上线">
           <img src="{{ '/images/badges/tencent.svg' | relative_url }}" alt="在腾讯应用宝下载纽扣缝纫" width="144" height="48" />
         </button>
       </div>

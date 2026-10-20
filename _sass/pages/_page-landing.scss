@@ -73,6 +73,53 @@
         background: transparent;
         cursor: default;
       }
+      .ios-download {
+        position: relative;
+        &:hover .ios-qr-popup,
+        &:focus-within .ios-qr-popup {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      .ios-qr-popup {
+        box-sizing: border-box;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 190px;
+        height: 218px;
+        padding: 5px 5px 15px;
+        background: #ffffff;
+        border: 0.5px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -9px;
+          left: 0;
+          width: 100%;
+          height: 9px;
+        }
+        img {
+          width: 180px;
+          max-width: 100%;
+          height: auto;
+        }
+        span {
+          font-size: 14px;
+          line-height: 18px;
+          color: #2f2f41;
+        }
+      }
     }
   }
 
