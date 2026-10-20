@@ -1,3 +1,11 @@
+var header = document.querySelector('.header');
+function updateHeaderBackground() {
+    header.classList.toggle('is-scrolled', window.scrollY > 0);
+}
+window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+window.addEventListener('pageshow', updateHeaderBackground);
+updateHeaderBackground();
+
 var body = document.querySelector('body')
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
