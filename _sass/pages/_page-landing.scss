@@ -186,10 +186,18 @@
       }
     }
     .screenshot-previous {
-      left: 12px;
+      left: 64px;
     }
     .screenshot-next {
-      right: 12px;
+      right: 64px;
+    }
+    @include media-breakpoint-down(md) {
+      .screenshot-previous {
+        left: 16px;
+      }
+      .screenshot-next {
+        right: 16px;
+      }
     }
     .screenshot-close {
       position: absolute;
