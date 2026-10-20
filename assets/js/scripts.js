@@ -11,14 +11,34 @@ menuTrigger.onclick = function() {
 
 var screenshotDialog = document.querySelector('.screenshot-dialog');
 if (screenshotDialog) {
-    document.querySelectorAll('.screenshot-preview').forEach(function(button) {
+    var screenshotThumbnails = document.querySelectorAll('.screenshot-preview img');
+    var screenshotIndex = 0;
+    var screenshotPrevious = screenshotDialog.querySelector('.screenshot-previous');
+    var screenshotNext = screenshotDialog.querySelector('.screenshot-next');
+    function showScreenshot(index) {
+        if (index < 0 || index >= screenshotThumbnails.length) return;
+        screenshotIndex = index;
+        var thumbnail = screenshotThumbnails[index];
+        var preview = screenshotDialog.querySelector('img');
+        preview.src = thumbnail.src;
+        preview.alt = thumbnail.alt;
+        screenshotPrevious.disabled = index === 0;
+        screenshotNext.disabled = index === screenshotThumbnails.length - 1;
+    }
+    document.querySelectorAll('.screenshot-preview').forEach(function(button, index) {
         button.addEventListener('click', function() {
-            var thumbnail = button.querySelector('img');
-            var preview = screenshotDialog.querySelector('img');
-            preview.src = thumbnail.src;
-            preview.alt = thumbnail.alt;
+            showScreenshot(index);
             screenshotDialog.showModal();
         });
+    });
+    screenshotPrevious.addEventListener('click', function() { showScreenshot(screenshotIndex - 1); });
+    screenshotNext.addEventListener('click', function() { showScreenshot(screenshotIndex + 1); });
+    document.addEventListener('keydown', function(event) {
+        if (!screenshotDialog.open || event.altKey || event.ctrlKey || event.metaKey) return;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            showScreenshot(screenshotIndex + (event.key === 'ArrowLeft' ? -1 : 1));
+        }
     });
     screenshotDialog.querySelector('.screenshot-close').addEventListener('click', function() {
         screenshotDialog.close();

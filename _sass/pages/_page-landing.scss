@@ -147,7 +147,7 @@
     max-width: none;
     max-height: none;
     margin: 0;
-    padding: 56px 24px 24px;
+    padding: 56px 64px 24px;
     border: 0;
     background: transparent;
     &[open] {
@@ -164,6 +164,32 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+    }
+    .screenshot-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      &:disabled {
+        opacity: 0.3;
+        cursor: default;
+      }
+    }
+    .screenshot-previous {
+      left: 12px;
+    }
+    .screenshot-next {
+      right: 12px;
     }
     .screenshot-close {
       position: absolute;
