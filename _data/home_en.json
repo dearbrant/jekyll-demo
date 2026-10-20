@@ -1,0 +1,83 @@
+{
+  "services": [
+    {
+      "title": "Projector Cutting",
+      "summary": "Digital precision calibration projects patterns at actual size onto fabric for direct cutting, greatly simplifying the cutting process.",
+      "icon": "/images/grid-icons/pic_projector.svg"
+    },
+    {
+      "title": "Pattern Storage",
+      "summary": "Save PLT, DXF, PDF, SVG patterns. Organize by style and format for clear, easy-to-find management.",
+      "icon": "/images/grid-icons/pic_pattern.svg"
+    },
+    {
+      "title": "Pattern Stitching",
+      "summary": "Stitch A4, A3 size PDF patterns into full-size large patterns. Stitched patterns can be cut with a projector.",
+      "icon": "/images/grid-icons/pic_stitching.svg"
+    },
+    {
+      "title": "Pattern Printing",
+      "summary": "PLT, DXF can be printed directly from your phone, no need format conversion. Large pattern tiled printing with automatic cutting for A4, A3 and other home paper sizes.",
+      "icon": "/images/grid-icons/pic_printer.svg"
+    },
+    {
+      "title": "Size Calibration",
+      "summary": "Calibrate PNG, JPG, and WebP image patterns to actual size for accurate printing and projection.",
+      "icon": "/images/grid-icons/pic_communication.svg"
+    },
+    {
+      "title": "Sewing Community",
+      "summary": "Join the sewing community to share and exchange with fellow enthusiasts, helping you find favorite designers, patterns, tutorials, and fabrics.",
+      "icon": "/images/grid-icons/pic_people.svg"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Prepare for projector cutting?",
+      "answers": [
+        "You will need a projector, cutting mat, tape measure, and a phone or tablet with Coutto Sew installed.",
+        "Mirror your phone to the projector with casting software, then calibrate in the app; for raster pattern images, set the real-world size first.",
+        "Recalibrate after moving the projector or changing length units so the projection stays accurate."
+      ]
+    },
+    {
+      "question": "Recommended projector for cutting?",
+      "answers": [
+        "Choose a projector with at least 720p resolution that can mirror your phone screen (built-in casting/mirroring apps or system wireless display).",
+        "Mirror your phone to the projector, then calibrate in the app to project patterns at true size and cut along the projected lines.",
+        "Recalibrate whenever you turn on or move the projector.",
+        "A cutting mat and tape measure are recommended; a grid mat helps improve calibration accuracy.",
+        "See the in-app “Choose Your Sewing Projector” tutorial for more setup tips."
+      ]
+    },
+    {
+      "question": "Supported pattern formats?",
+      "answers": [
+        "You can import and manage PDF, SVG, DXF, PLT, PNG, JPEG, WebP, and other common pattern files.",
+        "DXF, PLT, SVG, and PDF already include real-world dimensions and can be projected or printed directly.",
+        "PNG, JPEG, and WebP image patterns can be calibrated to actual size before projector cutting or printing."
+      ]
+    },
+    {
+      "question": "A3/A4 tiled printing formats?",
+      "answers": [
+        "PDF, SVG, DXF, PLT, PNG, JPEG, WebP, and other common pattern files support tiled A4/A3 printing.",
+        "For PNG, JPEG, and WebP image patterns, set the actual size with the calibration tools before printing."
+      ]
+    },
+    {
+      "question": "Supported devices?",
+      "answers": [
+        "Coutto Sew runs on iPhone, iPad, and Android phones and tablets.",
+        "For projector calibration and fabric cutting, we recommend a larger screen such as an iPad or Android tablet for a clearer view and easier controls."
+      ]
+    },
+    {
+      "question": "Supported OS versions?",
+      "answers": [
+        "iOS 17 or later on iPhone and iPad; Android 8.0 (API 26) or later on Android devices.",
+        "Keep your system and the app up to date for the best experience and compatibility."
+      ]
+    }
+  ]
+}

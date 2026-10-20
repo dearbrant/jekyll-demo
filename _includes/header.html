@@ -1,6 +1,6 @@
 <div class='header'>
   <div class="container">
-    <a class="site-brand" href="{{ site.baseurl }}">{% if page.layout == 'home' or page.layout == 'blog' or page.layout == 'post' %}<span class="brand-icon"><img src="{{ '/images/brand/ic_nav_app.svg' | relative_url }}" alt="" width="24" height="24" /></span><span>纽扣缝纫</span><span class="brand-english">Coutto Sew</span>{% else %}{{ site.title | escape }}{% endif %}</a>
+    <a class="site-brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.layout == 'home' or page.layout == 'blog' or page.layout == 'post' %}<span class="brand-icon"><img src="{{ '/images/brand/ic_nav_app.svg' | relative_url }}" alt="" width="24" height="24" /></span>{% unless page.lang == 'en' %}<span>纽扣缝纫</span>{% endunless %}<span class="brand-english">Coutto Sew</span>{% else %}{{ site.title | escape }}{% endif %}</a>
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>

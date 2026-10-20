@@ -3,6 +3,15 @@ layout: default
 bodyClass: "page-home"
 ---
 
+{% assign home_lang = page.lang | default: 'zh-CN' %}
+{% assign labels = site.data.home_ui[home_lang] %}
+{% assign home_services = site.data.home_services %}
+{% assign home_faqs = site.data.home_faqs %}
+{% if home_lang == 'en' %}
+  {% assign home_services = site.data.home_en.services %}
+  {% assign home_faqs = site.data.home_en.faqs %}
+{% endif %}
+
 <section class="landing-hero">
   <div class="container">
     <div class="hero-copy">
@@ -10,44 +19,46 @@ bodyClass: "page-home"
       <div class="app-downloads">
         <div class="ios-download">
           <a href="https://apps.apple.com/app/id6797682018" aria-describedby="ios-qr-caption">
-            <img src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="在 App Store 下载纽扣缝纫" width="148" height="48" />
+            <img src="{{ '/images/badges/app-store.svg' | relative_url }}" alt="{{ labels.app_store | escape }}" width="148" height="48" />
           </a>
           <div class="ios-qr-popup">
-            <img src="{{ '/images/badges/ios-qr-code.png' | relative_url }}" alt="扫码下载纽扣缝纫 iOS App" width="180" height="180" />
-            <span id="ios-qr-caption">扫码下载 iOS 版</span>
+            <img src="{{ '/images/badges/ios-qr-code.png' | relative_url }}" alt="{{ labels.qr_alt | escape }}" width="180" height="180" />
+            <span id="ios-qr-caption">{{ labels.qr_caption }}</span>
           </div>
         </div>
-        <button type="button" aria-disabled="true" title="安卓版即将上线" aria-label="腾讯应用宝，安卓版即将上线">
-          <img src="{{ '/images/badges/tencent.svg' | relative_url }}" alt="在腾讯应用宝下载纽扣缝纫" width="144" height="48" />
+        <button type="button" aria-disabled="true" title="{{ labels.android_soon | escape }}" aria-label="{{ labels.android_label | escape }}">
+          <img src="{{ '/images/badges/tencent.svg' | relative_url }}" alt="{{ labels.android_alt | escape }}" width="144" height="48" />
         </button>
       </div>
     </div>
-    <img class="hero-illustration" src="{{ '/images/illustrations/coutto-sewing.svg' | relative_url }}" alt="缝纫手作插画" width="560" height="432" />
+    <img class="hero-illustration" src="{{ '/images/illustrations/coutto-sewing.svg' | relative_url }}" alt="{{ labels.illustration | escape }}" width="560" height="432" />
   </div>
 </section>
 
-<section class="landing-screenshots container" aria-label="App 功能截图">
-  <div id="screenshots-track" class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
+<section class="landing-screenshots container" aria-label="{{ labels.screenshots }}">
+  <div id="screenshots-track" class="screenshots-track" tabindex="0" aria-label="{{ labels.scroll }}">
     {% for screenshot in site.data.home_screenshots %}
-    <button class="screenshot-preview" type="button" aria-label="放大查看：{{ screenshot.alt | escape }}">
-    <img src="{{ '/images/screenshots/' | append: screenshot.file | relative_url }}" alt="{{ screenshot.alt | escape }}" width="160" height="348" />
+    {% assign screenshot_alt = screenshot.alt %}
+    {% if home_lang == 'en' %}{% assign screenshot_alt = screenshot.alt_en %}{% endif %}
+    <button class="screenshot-preview" type="button" aria-label="{{ labels.zoom }}{{ screenshot_alt | escape }}">
+    <img src="{{ '/images/screenshots/' | append: screenshot.file | relative_url }}" alt="{{ screenshot_alt | escape }}" width="160" height="348" />
     </button>
     {% endfor %}
   </div>
-  <div class="screenshots-controls" role="group" aria-label="截图分页"></div>
+  <div class="screenshots-controls" data-page-label="{{ labels.page_label }}" role="group" aria-label="{{ labels.pages }}"></div>
 </section>
 
-<dialog class="screenshot-dialog" aria-label="App 截图大图预览">
-  <button class="screenshot-close" type="button" aria-label="关闭预览" autofocus><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></button>
-  <button class="screenshot-nav screenshot-previous" type="button" aria-label="上一张截图"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5L8 12L15 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+<dialog class="screenshot-dialog" aria-label="{{ labels.preview }}">
+  <button class="screenshot-close" type="button" aria-label="{{ labels.close }}" autofocus><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></button>
+  <button class="screenshot-nav screenshot-previous" type="button" aria-label="{{ labels.previous }}"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5L8 12L15 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
   <img alt="" />
-  <button class="screenshot-nav screenshot-next" type="button" aria-label="下一张截图"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5L16 12L9 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+  <button class="screenshot-nav screenshot-next" type="button" aria-label="{{ labels.next }}"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5L16 12L9 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
 </dialog>
 
-<section class="landing-features" aria-label="App 功能介绍">
+<section class="landing-features" aria-label="{{ labels.features }}">
   <div class="container">
     <div class="feature-grid">
-      {% for service in site.data.home_services %}
+      {% for service in home_services %}
       <div class="feature-card">
         <img class="feature-icon" src="{{ service.icon | relative_url }}" alt="" aria-hidden="true" width="120" height="120" />
         <h2 class="feature-title">{{ service.title | escape }}</h2>
@@ -60,9 +71,9 @@ bodyClass: "page-home"
 
 <section class="home-faq" aria-labelledby="faq-title">
   <div class="container">
-    <h2 id="faq-title" class="faq-title">常见问题</h2>
+    <h2 id="faq-title" class="faq-title">{{ labels.faq }}</h2>
     <div class="faq-list">
-      {% for faq in site.data.home_faqs %}
+      {% for faq in home_faqs %}
       <details class="faq-item" name="home-faq"{% if forloop.first %} open{% endif %}>
         <summary><span>{{ faq.question | escape }}</span></summary>
         <ul class="faq-answer">

@@ -71,7 +71,7 @@ if (screenshotTrack) {
             screenshotPages.push(position);
             var dot = document.createElement('button');
             dot.type = 'button';
-            dot.setAttribute('aria-label', '查看第 ' + (i + 1) + ' 组截图');
+            dot.setAttribute('aria-label', screenshotControls.dataset.pageLabel.replace('{page}', i + 1));
             dot.setAttribute('aria-controls', 'screenshots-track');
             dot.addEventListener('click', function() {
                 screenshotTrack.scrollTo({

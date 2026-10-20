@@ -488,3 +488,19 @@
 html:has(.screenshot-dialog[open]) {
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Coutto Serif English";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/coutto-serif-black-en.ttf") format("truetype");
+}
+
+html[lang="en"] .page-home {
+  font-family: Arial, sans-serif;
+  .landing-hero h1,
+  .landing-features .feature-title {
+    font-family: "Coutto Serif English", "Noto Serif SC", serif;
+  }
+}

@@ -11,7 +11,7 @@ main:
     weight: 2
   - name: "English"
     name_en: "中文"
-    url: "https://coutto.app/en/"
+    url: "/en/"
     weight: 3
 
 footer:
