@@ -77,15 +77,14 @@
   }
 
   .landing-screenshots {
-    padding: 0 16px;
     .screenshots-track {
       display: flex;
-      gap: 8px;
-      max-width: 1168px;
-      margin: 0 auto;
+      gap: 12px;
       overflow-x: auto;
+      scroll-snap-type: x proximity;
       .screenshot-preview {
         flex: 0 0 160px;
+        scroll-snap-align: start;
         padding: 0;
         border: 0;
         background: transparent;
@@ -93,12 +92,26 @@
       }
       img {
         display: block;
-        width: 160px;
-        height: 348px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
         border: 0.5px solid rgba(234, 67, 53, 0.2);
         border-radius: 2px;
       }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .landing-screenshots .screenshots-track {
+      gap: 30px;
+      .screenshot-preview {
+        flex-basis: calc((100% - 60px) / 3);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .landing-screenshots .screenshots-track .screenshot-preview {
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
 

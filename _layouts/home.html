@@ -20,7 +20,7 @@ bodyClass: "page-home"
   </div>
 </section>
 
-<section class="landing-screenshots" aria-label="App 功能截图">
+<section class="landing-screenshots container" aria-label="App 功能截图">
   <div class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
     {% for screenshot in site.data.home_screenshots %}
     <button class="screenshot-preview" type="button" aria-label="放大查看：{{ screenshot.alt | escape }}">
