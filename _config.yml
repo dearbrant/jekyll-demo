@@ -1,7 +1,7 @@
 baseurl: '/jekyll-demo/'
 url: 'https://dearbrant.com'
 permalink: pretty
-title: '纽扣缝纫 Coutto Sew'
+title: '纽扣缝纫 - 全能 AI 缝纫工具'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
