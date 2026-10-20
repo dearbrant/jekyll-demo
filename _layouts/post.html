@@ -13,7 +13,7 @@ bodyClass: "page-post"
         </p>
       </header>
       <div class="content">{{ content }}</div>
-      <p class="mt-4"><a href="{% if page.lang == 'en' %}{{ '/en/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'zh-CN' %}返回博客{% else %}Back to Tutorials{% endif %}</a></p>
+      <p class="mt-4"><a href="{% if page.lang == 'en' %}{{ '/en/tutorials/' | relative_url }}{% else %}{{ '/tutorials/' | relative_url }}{% endif %}">{% if page.lang == 'zh-CN' %}返回博客{% else %}Back to Tutorials{% endif %}</a></p>
     </article>
   </div>
 </div>

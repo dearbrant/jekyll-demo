@@ -407,7 +407,8 @@
       font-family: inherit;
       font-size: 14px;
       line-height: 24px;
-      color: #000000;
+      color: #D52106;
+      font-weight: 500;
     }
     .site-brand,
     .main-menu > ul > li > a {
@@ -458,7 +459,8 @@
         font-family: inherit;
         font-size: 14px;
         line-height: 24px;
-        color: #000000;
+        color: #D52106;
+        font-weight: 500;
       }
     }
     .language-link {
@@ -472,7 +474,13 @@
     }
   }
 
+  .main-menu-mobile {
+    background: #FFFFFF;
+  }
+
   .main-menu-mobile a {
+    color: #D52106;
+    font-weight: 500;
     border-radius: 6px;
     &:hover,
     &:focus-visible {

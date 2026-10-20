@@ -1,13 +1,13 @@
 main:
   - name: "更新日志"
-    name_en: "Changelog"
+    name_en: "What's New"
     url: "https://coutto.app/zh/changelog/"
     url_en: "https://coutto.app/en/changelog/"
     weight: 1
   - name: "使用教程"
     name_en: "Tutorials"
-    url: "/blog/"
-    url_en: "/en/blog/"
+    url: "/tutorials/"
+    url_en: "/en/tutorials/"
     weight: 2
   - name: "English"
     name_en: "中文"
