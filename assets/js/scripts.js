@@ -30,24 +30,40 @@ if (screenshotDialog) {
 
 var screenshotTrack = document.querySelector('.screenshots-track');
 if (screenshotTrack) {
-    var screenshotPrev = document.querySelector('.screenshots-prev');
-    var screenshotNext = document.querySelector('.screenshots-next');
+    var screenshotControls = document.querySelector('.screenshots-controls');
+    var screenshotPages = [];
     function updateScreenshotControls() {
-        screenshotPrev.disabled = screenshotTrack.scrollLeft <= 1;
-        screenshotNext.disabled = screenshotTrack.scrollLeft >= screenshotTrack.scrollWidth - screenshotTrack.clientWidth - 1;
-    }
-    function scrollScreenshots(direction) {
-        var gap = parseFloat(getComputedStyle(screenshotTrack).columnGap);
-        var step = screenshotTrack.querySelector('.screenshot-preview').getBoundingClientRect().width + gap;
-        var count = Math.max(1, Math.floor((screenshotTrack.clientWidth + gap + 1) / step));
-        screenshotTrack.scrollBy({
-            left: direction * step * count,
-            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+        var nearest = 0;
+        screenshotPages.forEach(function(position, index) {
+            if (Math.abs(position - screenshotTrack.scrollLeft) < Math.abs(screenshotPages[nearest] - screenshotTrack.scrollLeft)) nearest = index;
+        });
+        screenshotControls.querySelectorAll('button').forEach(function(dot, index) {
+            dot.setAttribute('aria-current', index === nearest ? 'true' : 'false');
         });
     }
-    screenshotPrev.addEventListener('click', function() { scrollScreenshots(-1); });
-    screenshotNext.addEventListener('click', function() { scrollScreenshots(1); });
+    function buildScreenshotControls() {
+        var maxScroll = screenshotTrack.scrollWidth - screenshotTrack.clientWidth;
+        var count = Math.ceil(screenshotTrack.scrollWidth / screenshotTrack.clientWidth);
+        screenshotControls.replaceChildren();
+        screenshotPages = [];
+        for (var i = 0; i < count; i++) {
+            let position = Math.min(i * screenshotTrack.clientWidth, maxScroll);
+            screenshotPages.push(position);
+            var dot = document.createElement('button');
+            dot.type = 'button';
+            dot.setAttribute('aria-label', '查看第 ' + (i + 1) + ' 组截图');
+            dot.setAttribute('aria-controls', 'screenshots-track');
+            dot.addEventListener('click', function() {
+                screenshotTrack.scrollTo({
+                    left: position,
+                    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+                });
+            });
+            screenshotControls.appendChild(dot);
+        }
+        updateScreenshotControls();
+    }
     screenshotTrack.addEventListener('scroll', updateScreenshotControls);
-    window.addEventListener('resize', updateScreenshotControls);
-    updateScreenshotControls();
+    window.addEventListener('resize', buildScreenshotControls);
+    buildScreenshotControls();
 }

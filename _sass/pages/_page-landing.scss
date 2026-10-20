@@ -102,30 +102,27 @@
 
   .screenshots-controls {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
+    justify-content: center;
     margin-top: 16px;
-    color: #6e6e73;
-    font-size: 13px;
     button {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
+      width: 24px;
+      height: 24px;
       padding: 0;
       border: 0;
-      border-radius: 50%;
-      color: #2f2f41;
-      background: #f0f0f2;
+      background: transparent;
       cursor: pointer;
-      &:disabled {
-        opacity: 0.35;
-        cursor: default;
+      &::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #d2d2d7;
       }
-      &:hover:not(:disabled) {
-        background: #e5e5e8;
+      &[aria-current="true"]::before {
+        background: #6e6e73;
       }
     }
   }
@@ -141,7 +138,7 @@
 
   @include media-breakpoint-up(lg) {
     .landing-screenshots .screenshots-track .screenshot-preview {
-      flex-basis: calc((100% - 48px) / 4);
+      flex-basis: 210px;
     }
   }
 
