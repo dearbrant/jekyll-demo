@@ -556,3 +556,12 @@ html[lang="en"] {
     }
   }
 }
+
+html[lang="en"] {
+  .page-blog,
+  .page-post {
+    * {
+      font-family: inherit;
+    }
+  }
+}
