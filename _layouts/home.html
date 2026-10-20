@@ -21,12 +21,17 @@ bodyClass: "page-home"
 </section>
 
 <section class="landing-screenshots container" aria-label="App 功能截图">
-  <div class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
+  <div id="screenshots-track" class="screenshots-track" tabindex="0" aria-label="左右滚动查看 App 截图">
     {% for screenshot in site.data.home_screenshots %}
     <button class="screenshot-preview" type="button" aria-label="放大查看：{{ screenshot.alt | escape }}">
     <img src="{{ '/images/screenshots/' | append: screenshot.file | relative_url }}" alt="{{ screenshot.alt | escape }}" width="160" height="348" />
     </button>
     {% endfor %}
+  </div>
+  <div class="screenshots-controls">
+    <span>查看更多</span>
+    <button class="screenshots-prev" type="button" aria-label="查看前面的截图" aria-controls="screenshots-track" disabled><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5L7 12L14 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+    <button class="screenshots-next" type="button" aria-label="查看更多截图" aria-controls="screenshots-track"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5L17 12L10 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
   </div>
 </section>
 
