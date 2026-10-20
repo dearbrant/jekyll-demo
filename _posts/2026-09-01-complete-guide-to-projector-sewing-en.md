@@ -11,16 +11,13 @@ description: "Get started with projector sewing in four steps: choose a projecto
 order: 1
 ---
 
-**Start Your Projector Sewing Journey in 4 Steps**
-
-Button Patterns  
-Empowering everyone to create with confidence
+## Start Your Projector Sewing Journey in Four Steps
 
 ![投影仪缝纫裁剪示例]({{ "/images/blog/complete-guide-to-projector-sewing/img-002.png" | relative_url }})
 
-## Step 1 Choose the Right Projector
+## Step 1: Choose the Right Projector
 
-Almost any projector can be used for sewing projection. The key is to choose a projector with suitable resolution, throw ratio and size that is easy to install.
+Almost any projector can be used for sewing projection. The key is to choose a projector with suitable **resolution**, **throw ratio** and size that is easy to install.
 
 - **Throw ratio < 1.2:1**: The smaller the throw ratio, the shorter the distance needed to project an image of the same size. A projector with a throw ratio below 1.2:1 is recommended. Ultra-short-throw projectors below 0.3:1 can project onto a tabletop, but they are also more expensive.
 - **Resolution >= 720P**: 720P is sufficient. 1080P is already good enough. There is no need for a higher resolution.
@@ -35,7 +32,7 @@ Almost any projector can be used for sewing projection. The key is to choose a p
 
 Correctly installing and setting up the projector is the basis for accurate pattern projection. You also need to find a flat projection surface.
 
-**Key projector settings**
+### Key Projector Settings
 
 - **Installation height**: Install the projector at a suitable height so that the projected image can cover the entire cutting mat.
 - **Focus adjustment**: Adjust the projector focus to ensure a clear image.
@@ -48,23 +45,23 @@ Correctly installing and setting up the projector is the basis for accurate patt
 
 ## Step 3 Mirror Your Phone to the Projector
 
-**Connection methods**
+### Connection Methods
 
 - **Wired connection**: Connect with an HDMI cable. The connection is stable and reliable, and the signal transmission quality is high, making it suitable for long working sessions.
 - **Wireless connection**: Some projectors support wireless casting, such as Screen Mirroring AirPlay on iOS and Chromecast on Android. Wireless casting is flexible and convenient.
 
-![Mirror Your Phone to the Projector]({{ "/images/blog/complete-guide-to-projector-sewing/img-025.png" | relative_url }})
+![Mirror Your Phone to the Projector]({{ "/images/blog/complete-guide-to-projector-sewing/img-025.jpg" | relative_url }})
 
 ![Mirror Your Phone to the Projector]({{ "/images/blog/complete-guide-to-projector-sewing/img-027.png" | relative_url }})
 
 ## Step 4 Use the Bear Paw Pattern App for Calibration and Projection
 
-The Bear Paw Pattern App can quickly calibrate the projected image and provides powerful pattern-management features.
+The Coutto Sew App can quickly calibrate the projected image and provides powerful pattern-management features.
 
 - **Quick calibration**: Automatically calibrate the projected image according to the measurements entered, ensuring accurate projected pattern dimensions.
 - **Color inversion**: Invert the pattern colors to improve the visibility of pattern lines on different fabrics.
 - **Pattern operations**: Easily rotate, flip and mirror patterns to suit different cutting needs.
-- **PDF tiling**: Supports digital assembly of letter/A4-size PDF patterns.
+- **PDF tiling**: Supports digital assembly of Letter/A4-size PDF patterns.
 
 ![Use the Bear Paw Pattern App for Calibration and Projection]({{ "/images/blog/complete-guide-to-projector-sewing/img-039.png" | relative_url }})
 
@@ -111,11 +108,11 @@ Projector sewing projects digital patterns directly onto fabric for fast cutting
 
 ![Projector Sewing Makes Sewing Easier]({{ "/images/blog/complete-guide-to-projector-sewing/img-054.png" | relative_url }})
 
-## Welcome to Join Button Sewing Group
+## Join the Coutto Sew Community
 
-Whether you are a beginner or an experienced user, the Button Sewing community can provide the support and resources you need.
+**Search for “纽扣缝纫” on Xiaohongshu to find us.** Whether you are a beginner or an experienced user, the Coutto Sew community can provide the support and resources you need.
 
 - An active community of experienced users
 - Get help and answers to questions
 - Share experience and tips
-- Learn about the latest updates and features of the Coutto App
+- Learn about updates and features of the Coutto App

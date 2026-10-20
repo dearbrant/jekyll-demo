@@ -11,11 +11,11 @@ description: "Project digital patterns onto fabric at the correct scale with cal
 order: 2
 ---
 
-**Calibration + Projection: Start Projector Sewing in Two Steps**
+## Calibration + Projection: Start Projector Sewing in Two Steps
 
 ## Preparation: Mirror Your Phone to the Projector
 
-**Connection Methods**
+### Connection Methods
 
 - **Wired Connection**: Connect with an HDMI cable. The connection is stable and reliable, and the signal transmission quality is high, making it suitable for long working sessions.
 - **Wireless Connection**: Some projectors support wireless casting, such as Screen Mirroring AirPlay on iOS and Chromecast on Android. Wireless casting is flexible and convenient.
@@ -30,8 +30,8 @@ The Button Pattern App provides a quick way to calibrate the projected image.
 
 ### Quick Calibration in Two Steps
 
-1. Drag the four corners of the grid in the app so that they align with the grid on the cutting mat. Continue until the projected grid and the cutting-mat grid are fully aligned.
-2. Read the height and width covered by the projected grid on the cutting mat, then enter the measured length and width in the Button Pattern App.
+- Drag the four corners of the grid in the app so that they align with the grid on the cutting mat. Continue until the projected grid and the cutting-mat grid are fully aligned.
+- Read the height and width covered by the projected grid on the cutting mat, then enter the measured length and width in the Button Pattern App.
 
 ![Aligning the projected grid with the cutting mat]({{ "/images/blog/coutto-pattern-app-user-guide/img-021.png" | relative_url }})
 
@@ -90,3 +90,12 @@ Projector sewing projects digital patterns directly onto fabric for fast cutting
 ![Projector sewing workspace]({{ "/images/blog/coutto-pattern-app-user-guide/img-034.png" | relative_url }})
 
 ![Digital pattern projection]({{ "/images/blog/coutto-pattern-app-user-guide/img-035.png" | relative_url }})
+
+## Join the Coutto Sew Community
+
+**Search for “纽扣缝纫” on Xiaohongshu to find us.** Whether you are a beginner or an experienced user, the Coutto Sew community can provide the support and resources you need.
+
+- An active community of experienced users
+- Get help and answers to questions
+- Share experience and tips
+- Learn about updates and features of the Coutto App

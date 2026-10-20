@@ -11,13 +11,9 @@ description: "Build a no-drill HY450C sewing projector setup with a 3D-printed V
 order: 4
 ---
 
-**3D-Printed VESA Adapter + TV Stand + Accessories**
-
 ## Projector Sewing Stand Solution
 
-Projector sewing patterns are very convenient, but installing the projector is not easy. We have developed a semi-custom solution: a 3D-printed VESA adapter, a TV stand and accessories.
-
-The list is as follows:
+Projector sewing patterns are very convenient, but installing the projector is not easy. We have developed a semi-custom solution: a 3D-printed VESA adapter, a TV stand and accessories. The list is as follows:
 
 1. **Projector**: Magcubic 450c
 2. **TV Stand**: L99C, maximum height 1,850 mm, load capacity 25 kg, floor stand installation with no drilling required
@@ -32,16 +28,13 @@ The list is as follows:
 
 ### Magcubic 450c
 
-**Magcubic HY450C**
-
 - Resolution: 1080P; brightness: 900 ANSI; throw ratio: 0.6:1
 - Four 5 mm screw holes on the back; weight: 2.2 kg
 - HDMI port; the system supports free screen casting
 - Supports off-axis projection, making perpendicular projection easier
 
-Advantage: This projector has a suitable throw ratio for sewing patterns. It can project an A0-size image from a distance of 1 meter, making it well suited to tabletop projection.
-
-Disadvantage: It is slightly heavy at 2.2 kg. The spacing of the four screw holes on the back is non-standard, making installation difficult.
+- Advantage: This projector has a suitable throw ratio for sewing patterns. It can project an A0-size image from a distance of 1 meter, making it well suited to tabletop projection.
+- Disadvantage: It is slightly heavy at 2.2 kg. The spacing of the four screw holes on the back is non-standard, making installation difficult.
 
 ![Magcubic HY450C projector]({{ "/images/blog/hy450c-vesa-projector-stand/img-008.png" | relative_url }})
 
@@ -105,3 +98,12 @@ If there is genuine demand, Button Patterns will consider offering a printing se
 ![VESA adapter print file]({{ "/images/blog/hy450c-vesa-projector-stand/img-027.png" | relative_url }})
 
 ![3D printing process]({{ "/images/blog/hy450c-vesa-projector-stand/img-028.png" | relative_url }})
+
+## Join the Coutto Sew Community
+
+**Search for “纽扣缝纫” on Xiaohongshu to find us.** Whether you are a beginner or an experienced user, the Coutto Sew community can provide the support and resources you need.
+
+- An active community of experienced users
+- Get help and answers to questions
+- Share experience and tips
+- Learn about updates and features of the Coutto App

@@ -11,14 +11,9 @@ description: "Learn what to look for in a sewing projector, from throw ratio, re
 order: 3
 ---
 
-Button Patterns  
-Empowering everyone to create with confidence
-
 ![Sewing projector setup]({{ "/images/blog/how-to-choose-a-sewing-projector/img-006.png" | relative_url }})
 
 ## What Is Projector Sewing?
-
-**Projector Sewing Makes Sewing Easier**
 
 Projector sewing is an innovative sewing technique that projects digital patterns directly onto fabric for fast cutting. Setup and digital calibration can be completed in just a few minutes, greatly simplifying the traditional process of using paper patterns.
 
@@ -38,11 +33,11 @@ Projector sewing is an innovative sewing technique that projects digital pattern
 
 The smaller the throw ratio, the lower the projector can be installed, making installation easier. A projector with a throw ratio below 1.2:1 is recommended, preferably a short-throw projector below 1.0:1.
 
-**Short-Throw Projector**
+### **Short-Throw Projector**
 
 A short-throw projector with a throw ratio below 1.0:1 is recommended. With a stand taller than 1.2 meters, it can project an approximately A1-size pattern onto a tabletop.
 
-Short-throw projectors offer the following advantages:
+**Short-throw projectors offer the following advantages:**
 
 - It is easier to find a suitable stand
 - The projector is more stable after installation
@@ -58,7 +53,7 @@ An ultra-short-throw projector below 0.3:1 is even easier to install.
 
 An ultra-short-throw projector with a 0.3:1 throw ratio is, of course, better. It only needs to be positioned slightly above the tabletop to project an image large enough for tabletop projection. However, ultra-short-throw models are also more expensive.
 
-Ultra-short-throw projectors offer the following advantages:
+**Ultra-short-throw projectors offer the following advantages:**
 
 - No stand is required; temporarily stacking a few books is enough
 - Easy to move and remove
@@ -78,21 +73,17 @@ Ultra-short-throw projectors offer the following advantages:
 
 **Entry-Level Resolution and Brightness Are Sufficient**
 
-720P is usable, and 1080P is already good enough. There is no need for a higher resolution. The brightness only needs to be adequate; if the image is a little dim, you can turn off the lights. In short, an entry-level model is all you need.
+720P is usable, and 1080P is already good enough.
+There is no need for a higher resolution. The brightness only needs to be adequate; if the image is a little dim, you can turn off the lights. In short, an entry-level model is all you need.
 
 ### Resolution
 
-Resolution determines image clarity.
-
-Pattern graphics are simple. A 720P projector, or a slightly better 1080P projector, can meet the needs of pattern projection.
-
+Resolution determines image clarity. Pattern graphics are simple. A 720P projector, or a slightly better 1080P projector, can meet the needs of pattern projection.
 Be sure to ask about the optical resolution. Some manufacturers state that a projector supports a compatible resolution of 1080P, while its actual optical resolution is only 720P.
 
 ### Brightness
 
-Greater brightness produces better results under strong ambient light.
-
-However, there is no need to pursue extremely high brightness. If the image is too dim, you can turn off the lights. Brighter projectors are also more expensive.
+Greater brightness produces better results under strong ambient light. However, there is no need to pursue extremely high brightness. If the image is too dim, you can turn off the lights. Brighter projectors are also more expensive.
 
 ![Projected grid clarity]({{ "/images/blog/how-to-choose-a-sewing-projector/img-027.png" | relative_url }})
 
@@ -119,22 +110,18 @@ The projector should ideally support both wireless and wired casting so that you
 ### Wired HDMI Connection
 
 The projector needs an HDMI port.
-
 An HDMI cable provides a stable and reliable connection with high signal-transmission quality, making it suitable for long working sessions.
-
 Check the projector specifications to confirm that it has an HDMI port.
 
 ### Wireless Connection
 
 The projector needs to support screen casting.
-
 The projector should ideally include free casting software. Otherwise, you may need to download paid casting software such as Dangbei Casting.
-
 Ask customer service whether free casting software is included.
 
 **HDMI**
 
-![HDMI cable]({{ "/images/blog/how-to-choose-a-sewing-projector/img-042.png" | relative_url }})
+![HDMI cable]({{ "/images/blog/how-to-choose-a-sewing-projector/img-042.jpg" | relative_url }})
 
 ![Wireless casting from a phone]({{ "/images/blog/how-to-choose-a-sewing-projector/img-037.png" | relative_url }})
 
@@ -179,3 +166,12 @@ Almost any projector can be used for sewing projection. The key is to choose one
 - Type-C video port; the system supports screen casting
 
 ![Magcubic projector]({{ "/images/blog/how-to-choose-a-sewing-projector/img-056.png" | relative_url }})
+
+## Join the Coutto Sew Community
+
+**Search for “纽扣缝纫” on Xiaohongshu to find us.** Whether you are a beginner or an experienced user, the Coutto Sew community can provide the support and resources you need.
+
+- An active community of experienced users
+- Get help and answers to questions
+- Share experience and tips
+- Learn about updates and features of the Coutto App
