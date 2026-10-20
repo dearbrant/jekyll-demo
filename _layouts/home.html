@@ -30,13 +30,13 @@ bodyClass: "page-home"
           <img src="{{ labels.android_badge | relative_url }}" alt="{{ labels.android_alt | escape }}" width="{{ labels.android_width }}" height="48" />
         </button>
       </div>
-      <div class="social-network" role="group" aria-label="社交网络">
+      <div class="social-network" role="group" aria-label="{{ labels.social_label | escape }}">
         <div class="social-icons">
-          <a href="https://www.xiaohongshu.com/user/profile/6443d9ee00000000120361de" target="_blank" rel="noopener" title="小红书 纽扣缝纫"><img src="{{ '/images/social/ic_xiaohongshu.svg' | relative_url }}" alt="小红书 纽扣缝纫" width="24" height="24" /></a>
-          <a href="https://space.bilibili.com/3546896972909334" target="_blank" rel="noopener" title="哔哩哔哩 纽扣缝纫"><img src="{{ '/images/social/ic_bilibili.svg' | relative_url }}" alt="哔哩哔哩 纽扣缝纫" width="24" height="24" /></a>
-          <a href="https://www.douyin.com/user/MS4wLjABAAAAEGgDzPo1fj9PnbUvHm22JLOMlpeW-_QciEy_kmk22zvhYFu5tjov9RsXm3lvuHTm" target="_blank" rel="noopener" title="抖音 纽扣缝纫"><img src="{{ '/images/social/ic_tiktok.svg' | relative_url }}" alt="抖音 纽扣缝纫" width="24" height="24" /></a>
+          <a href="https://www.xiaohongshu.com/user/profile/6443d9ee00000000120361de" target="_blank" rel="noopener" title="{{ labels.social_rednote | escape }}"><img src="{{ '/images/social/ic_xiaohongshu.svg' | relative_url }}" alt="{{ labels.social_rednote | escape }}" width="24" height="24" /></a>
+          <a href="https://space.bilibili.com/3546896972909334" target="_blank" rel="noopener" title="{{ labels.social_bilibili | escape }}"><img src="{{ '/images/social/ic_bilibili.svg' | relative_url }}" alt="{{ labels.social_bilibili | escape }}" width="24" height="24" /></a>
+          <a href="https://www.douyin.com/user/MS4wLjABAAAAEGgDzPo1fj9PnbUvHm22JLOMlpeW-_QciEy_kmk22zvhYFu5tjov9RsXm3lvuHTm" target="_blank" rel="noopener" title="{{ labels.social_tiktok | escape }}"><img src="{{ '/images/social/ic_tiktok.svg' | relative_url }}" alt="{{ labels.social_tiktok | escape }}" width="24" height="24" /></a>
         </div>
-        <span class="social-search" title="欢迎在社交平台搜索 纽扣缝纫 联系我们"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5" stroke-linecap="round"/></svg><span>搜索 纽扣缝纫</span></span>
+        <span class="social-search" title="{{ labels.social_search_hint | escape }}"><img src="{{ '/images/social/ic_search.svg' | relative_url }}" alt="" width="24" height="24" /><span>{{ labels.social_search | escape }}</span></span>
       </div>
     </div>
     <img class="hero-illustration" src="{{ '/images/illustrations/coutto-sewing.svg' | relative_url }}" alt="{{ labels.illustration | escape }}" width="560" height="432" />

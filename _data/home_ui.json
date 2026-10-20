@@ -19,7 +19,13 @@
     "features": "App 功能介绍",
     "faq": "常见问题",
     "android_badge": "/images/badges/tencent.svg",
-    "android_width": 144
+    "android_width": 144,
+    "social_label": "社交网络",
+    "social_rednote": "小红书 纽扣缝纫",
+    "social_bilibili": "哔哩哔哩 纽扣缝纫",
+    "social_tiktok": "抖音 纽扣缝纫",
+    "social_search": "搜索 纽扣缝纫",
+    "social_search_hint": "欢迎在社交平台搜索 纽扣缝纫 联系我们"
   },
   "en": {
     "app_store": "Download Coutto Sew on the App Store",
@@ -41,6 +47,12 @@
     "features": "App features",
     "faq": "FAQ",
     "android_badge": "/images/badges/google-play.svg",
-    "android_width": 163
+    "android_width": 163,
+    "social_label": "Social media",
+    "social_rednote": "rednote 纽扣缝纫",
+    "social_bilibili": "BiliBili 纽扣缝纫",
+    "social_tiktok": "TickTok 纽扣缝纫",
+    "social_search": "Search Coutto Sew",
+    "social_search_hint": "Search for Coutto Sew on social platforms to connect with us"
   }
 }
