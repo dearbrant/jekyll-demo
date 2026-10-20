@@ -409,6 +409,35 @@
       line-height: 24px;
       color: #000000;
     }
+    .site-brand,
+    .main-menu > ul > li > a {
+      position: relative;
+      isolation: isolate;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: -6px -8px;
+        z-index: -1;
+        border-radius: 6px;
+        background-color: transparent;
+        transition: background-color 120ms ease;
+        pointer-events: none;
+      }
+      &:hover,
+      &:focus-visible {
+        text-decoration: none;
+        &::before {
+          background-color: rgba(213, 33, 6, 0.05);
+        }
+      }
+    }
+    .hamburger {
+      border-radius: 6px;
+      &:hover,
+      &:focus-visible {
+        background-color: rgba(213, 33, 6, 0.05);
+      }
+    }
     .brand-english, .language-link .menu-label {
       font-family: "Coutto Inter", "PingFang SC", sans-serif;
     }
@@ -440,6 +469,14 @@
         width: 14px;
         height: 14px;
       }
+    }
+  }
+
+  .main-menu-mobile a {
+    border-radius: 6px;
+    &:hover,
+    &:focus-visible {
+      background-color: rgba(213, 33, 6, 0.05);
     }
   }
 
