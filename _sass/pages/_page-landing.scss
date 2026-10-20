@@ -396,6 +396,9 @@
     }
   }
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 15;
     height: 64px;
     padding: 0;
     border: 0;
@@ -412,31 +415,10 @@
     }
     .site-brand,
     .main-menu > ul > li > a {
-      position: relative;
-      isolation: isolate;
-      &::before {
-        content: "";
-        position: absolute;
-        inset: -6px -8px;
-        z-index: -1;
-        border-radius: 6px;
-        background-color: transparent;
-        transition: background-color 120ms ease;
-        pointer-events: none;
-      }
       &:hover,
       &:focus-visible {
+        font-weight: 700;
         text-decoration: none;
-        &::before {
-          background-color: rgba(213, 33, 6, 0.05);
-        }
-      }
-    }
-    .hamburger {
-      border-radius: 6px;
-      &:hover,
-      &:focus-visible {
-        background-color: rgba(213, 33, 6, 0.05);
       }
     }
     .brand-english, .language-link .menu-label {
@@ -481,10 +463,9 @@
   .main-menu-mobile a {
     color: #D52106;
     font-weight: 500;
-    border-radius: 6px;
     &:hover,
     &:focus-visible {
-      background-color: rgba(213, 33, 6, 0.05);
+      font-weight: 700;
     }
   }
 
