@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Coutto Inter Brand";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/coutto-inter-medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Coutto Serif";
   font-style: normal;
   font-weight: 900;
@@ -602,4 +610,8 @@ html[lang="en"] {
       }
     }
   }
+}
+
+html[lang="zh-CN"] .header .site-brand .brand-english {
+  font-family: "Coutto Inter Brand", "Coutto Inter", sans-serif;
 }
