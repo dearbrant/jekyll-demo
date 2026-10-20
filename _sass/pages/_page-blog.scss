@@ -7,6 +7,9 @@
 }
 
 .page-blog {
+  .service-title a:hover {
+    text-decoration: underline;
+  }
   .blog-list {
     max-width: 960px;
     margin-top: 30px;
@@ -29,6 +32,7 @@
     min-width: 0;
   }
   .blog-summary {
+    font-size: 15px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

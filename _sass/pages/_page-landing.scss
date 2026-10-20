@@ -358,6 +358,12 @@
   }
 }
 
+.page-blog,
+.page-post {
+  background-image: url("../../images/backgrounds/pic_background_down.png");
+  background-position: center bottom;
+}
+
 html:has(.screenshot-dialog[open]) {
   overflow: hidden;
 }
