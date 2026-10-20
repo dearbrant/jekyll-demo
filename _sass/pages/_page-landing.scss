@@ -79,7 +79,7 @@
   .landing-screenshots {
     .screenshots-track {
       display: flex;
-      gap: 12px;
+      gap: 8px;
       overflow-x: auto;
       scroll-snap-type: x proximity;
       .screenshot-preview {
@@ -108,7 +108,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 24px;
+      width: 12px;
       height: 24px;
       padding: 0;
       border: 0;
@@ -129,7 +129,6 @@
 
   @include media-breakpoint-up(md) {
     .landing-screenshots .screenshots-track {
-      gap: 16px;
       .screenshot-preview {
         flex-basis: calc((100% - 32px) / 3);
       }
