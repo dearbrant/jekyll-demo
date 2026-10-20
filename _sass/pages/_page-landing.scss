@@ -71,7 +71,7 @@
         border: 0;
         padding: 0;
         background: transparent;
-        cursor: not-allowed;
+        cursor: default;
       }
     }
   }
@@ -334,7 +334,7 @@
 .page-blog,
 .page-post {
   background-color: #ffffff;
-  background-image: url("../../images/backgrounds/pic_background_up.svg"), url("../../images/backgrounds/pic_background_down.png");
+  background-image: url("../../images/backgrounds/pic_background_up.svg?v=2"), url("../../images/backgrounds/pic_background_down.png");
   background-position: left top, center bottom;
   background-repeat: repeat-x;
 
