@@ -27,7 +27,7 @@ bodyClass: "page-home"
           </div>
         </div>
         <button type="button" aria-disabled="true" title="{{ labels.android_soon | escape }}" aria-label="{{ labels.android_label | escape }}">
-          <img src="{{ '/images/badges/tencent.svg' | relative_url }}" alt="{{ labels.android_alt | escape }}" width="144" height="48" />
+          <img src="{{ labels.android_badge | relative_url }}" alt="{{ labels.android_alt | escape }}" width="{{ labels.android_width }}" height="48" />
         </button>
       </div>
     </div>

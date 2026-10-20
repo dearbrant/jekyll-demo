@@ -17,15 +17,17 @@
     "previous": "上一张截图",
     "next": "下一张截图",
     "features": "App 功能介绍",
-    "faq": "常见问题"
+    "faq": "常见问题",
+    "android_badge": "/images/badges/tencent.svg",
+    "android_width": 144
   },
   "en": {
     "app_store": "Download Coutto Sew on the App Store",
     "qr_alt": "QR code to download Coutto Sew for iOS",
     "qr_caption": "Scan to download for iOS",
     "android_soon": "Android version coming soon",
-    "android_label": "Tencent App Store, Android version coming soon",
-    "android_alt": "Download Coutto Sew on Tencent App Store",
+    "android_label": "Google Play, Android version coming soon",
+    "android_alt": "Get Coutto Sew on Google Play",
     "illustration": "Sewing illustration",
     "screenshots": "App screenshots",
     "scroll": "Scroll horizontally to view app screenshots",
@@ -37,6 +39,8 @@
     "previous": "Previous screenshot",
     "next": "Next screenshot",
     "features": "App features",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "android_badge": "/images/badges/google-play.svg",
+    "android_width": 163
   }
 }
